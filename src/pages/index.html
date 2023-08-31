@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <meta name="title" content="PH Tube" />
+    <meta
+      name="description"
+      content="A Simple Responsive & Interactive Video Website"
+    />
+    <!-- Favicon  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" sizes="192x192" href="../assets/favicons/icon.png" />
+    <!-- Apple Touch Icon (reuse 192px icon.png) -->
+    <link rel="apple-touch-icon" href="../assets/favicons/icon.png" />
+    <!-- Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="../assets/favicons/icon.svg" color="blue" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" href="../styles/output.css" />
+    <style>
+      .bg-grayish {
+        background-color: #25252526;
+      }
+    </style>
+  </head>
+
+  <body class="font-inter text-gray-900">
+    <section id="body">
+      <header>
+        <nav class="flex items-center justify-around pt-7">
+          <div class="logo">
+            <img src="../assets/logo/Logo.png" alt="PH Tube" />
+          </div>
+          <button
+            class="btn bg-[#25252533] min-h-0 h-10 rounded-md capitalize border-none outline-none focus:outline-none hover:bg-red-500 hover:text-white"
+          >
+            Sort by view</button
+          ><button
+            class="btn hover:bg-red-600 bg-red-500 border-none text-white outline-none min-h-0 h-10 rounded-md capitalize ml-24"
+          >
+            Blog
+          </button>
+        </nav>
+        <hr class="border border-gray-200 my-5 mx-44" />
+      </header>
+      <main>
+        <div
+          id="video-catagories"
+          class="flex justify-center items-center mx-10 gap-5"
+        >
+          <button
+            class="btn hover:bg-red-600 bg-red-500 border-none text-white outline-none min-h-0 h-10 rounded-md capitalize"
+          >
+            All
+          </button>
+          <button
+            class="btn bg-grayish border-none outline-none min-h-0 h-10 rounded-md capitalize hover:bg-red-500 hover:text-white"
+          >
+            Music
+          </button>
+          <button
+            class="btn bg-grayish border-none outline-none min-h-0 h-10 rounded-md capitalize hover:bg-red-500 hover:text-white"
+          >
+            Comedy
+          </button>
+          <button
+            class="btn bg-grayish border-none outline-none min-h-0 h-10 rounded-md capitalize hover:bg-red-500 hover:text-white"
+          >
+            Drawing
+          </button>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center mx-44 my-10"
+        >
+          <div class="card max-w-xs w-80 rounded-md">
+            <figure>
+              <img src="../assets/img/moonlight.jpg" />
+            </figure>
+            <div class="mt-3">
+              <div class="info-top flex gap-2">
+                <img
+                  class="rounded-full w-10 h-10"
+                  src="../assets/favicons/Icon.png"
+                  alt=""
+                />
+                <p class="font-bold">
+                  Building a winning UX Strategy Using the Kao model.
+                </p>
+              </div>
+              <p class="mt-3 ml-20">publisher</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </section>
+    <script src="../js/utilities.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
