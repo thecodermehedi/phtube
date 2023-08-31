@@ -1,0 +1,16 @@
+{
+  "name": "swiftstart",
+  "version": "1.0.0",
+  "description": "A tailwind project starter template..",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css -w"
+  },
+  "keywords": [],
+  "author": "devbytemehedi",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^3.5.0",
+    "tailwindcss": "^3.3.3"
+  }
+}

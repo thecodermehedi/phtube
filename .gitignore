@@ -1,0 +1,31 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Useful .gitignore templates: https://github.com/github/gitignore
+
+### Node ###
+# Logs
+logs
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Dependency directories
+/node_modules
+
+#Build generated
+#dist/style.css
+
+### System Files ###
+*.DS_Store
+
+# Folder config file
+Desktop.ini
+
+# Thumbnails
+._*
+
+# Others
+.cache
+.prettierrc
+typer
