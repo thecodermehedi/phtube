@@ -22,7 +22,7 @@ const pushCatButtons = (array) => {
 
 const showData = (id) => {
   const buttonElement = document.getElementById(id);
-  buttonElement.addEventListener("click", (event) => {
+  buttonElement.addEventListener("click", () => {
     fetchClearShowData(id);
   });
 };
@@ -34,7 +34,6 @@ const fetchClearShowData = async (id) => {
   const data = await res.json();
   const status = data.status;
   if (!status) {
-    console.log(!status);
     const videoContainer = document.getElementById("video-container");
     videoContainer.textContent = "";
     const notFoundDiv = document.getElementById("not-found");
@@ -60,44 +59,38 @@ const pushVideoCards = (array) => {
   const videoContainer = document.getElementById("video-container");
   videoContainer.textContent = "";
   array.forEach((element) => {
-    console.log(element.authors[0].verified);
-    let srcImage = "../assets/img/verified.png";
-    if (element.authors[0].verified) {
-      let srcImage = "../assets/img/verified.png";
+    const isVerified = element.authors[0].verified;
+    if (isVerified === true) {
+      verifiedElement = `<span><img class="w-5 h-5 verified-img" src="../assets/img/verified.png" alt="verified"/></span>`;
     } else {
-      let srcimage;
+      verifiedElement = "";
     }
     const videoCard = document.createElement("div");
     videoCard.setAttribute("id", element.category_id);
     videoCard.classList = "card max-w-[312px] rounded-md";
     const postedSeconds = element.others.posted_date;
-    const postedHours = postedSeconds / 3600;
-
-    // console.log(postedHours.toFixed(2));
+    let time = "";
+    if (postedSeconds <= 0 || postedSeconds.length > 5) {
+      time = "";
+    } else if (postedSeconds > 0 || postedSeconds.length < 5) {
+      const postedHours = Math.floor(postedSeconds / 3600);
+      const postedMinitue = Math.floor((postedSeconds % 3600) / 60);
+      time = `${postedHours}hrs ${postedMinitue}min ago`;
+    }
     videoCard.innerHTML = `
       <figure class="rounded-md relative">
         <img class="w-[312px] h-[200px]" src="${element.thumbnail}" />
-        <p class="absolute bg-[#171717] text-gray-100 rounded-md px-2 bottom-2 right-2">
-          ${element.others.posted_date} ago
+        <p class="time absolute bg-[#171717] text-gray-100 rounded-md px-2 bottom-2 right-2">
+          ${time}
         </p>
       </figure>
       <div class="mt-3 flex gap-2">
-        <img class="rounded-full w-10 h-10" src="${
-          element.authors[0].profile_picture
-        }" alt="" />
+        <img class="rounded-full w-10 h-10" src="${element.authors[0].profile_picture}" alt="" />
         <div class="text-left">
           <p class="font-bold">${element.title}</p>
           <p class="text-[#171717b3] font-normal text-sm my-2 flex items-center gap-2">
-            ${element.authors[0].profile_name}
-            <span>
-              <img class="w-5 h-5 verified-img hidden" src="${
-                element.authors[0].verified ? "../assets/img/verified.png" : ""
-              }" alt="verified" />
-            </span>
-          </p>
-          <p class="text-[#171717b3] font-normal text-sm">${
-            element.others.views
-          } views</p>
+            ${element.authors[0].profile_name} ${verifiedElement}</p>
+          <p class="text-[#171717b3] font-normal text-sm">${element.others.views} views</p>
         </div>
       </div>
     `;
@@ -105,5 +98,24 @@ const pushVideoCards = (array) => {
   });
 };
 
+const sortByView = async (id) => {
+  const res = await fetch(
+    `https://openapi.programming-hero.com/api/videos/category/${id}`
+  );
+  const data = await res.json();
+  const media = data.data;
+  media.forEach((element) => {
+    const vidViewsCount = parseFloat(element.others.views);
+    console.log(element.others.views);
+    console.log(vidViewsCount);
+  });
+};
+
+const sortBtn = document.getElementById("sort-btn");
+sortBtn.addEventListener("click", function () {
+  // sortByView(1000);
+});
+
 getCatData();
 fetchClearShowData(1000);
+sortByView(1000);
