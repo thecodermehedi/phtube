@@ -3,20 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - PH Tube</title>
+    <title>Blog - Mehedi Hasan</title>
     <meta name="title" content="PH Tube" />
     <meta
       name="description"
       content="A Simple Responsive & Interactive Video Website"
     />
     <!-- Favicon  -->
-    <link
-      rel="shortcut icon"
-      href="../assets/favicons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="icon" sizes="192x192" href="../assets/favicons/icon.png" />
-    <link rel="apple-touch-icon" href="../assets/favicons/icon.png" />
+    <link rel="icon" sizes="192x192" href="../assets/favicons/favicon.png" />
+    <link rel="apple-touch-icon" href="../assets/favicons/favicon.png" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,31 +23,35 @@
     <link rel="stylesheet" href="../styles/output.css" />
   </head>
   <body class="min-h-screen text-gray-100 font-ubuntu">
-    <div class="flex">
+    <div class="flex flex-col md:flex-row">
       <div
-        class="bg-[#111313] border border-black flex flex-col justify-center items-center h-screen w-80"
+        class="bg-[#111313] border border-black flex-col justify-center items-center md:h-screen w-full md:w-80 flex"
       >
-        <div class="avatar">
-          <div class="w-24 rounded-full">
+        <div class="avatar mt-10 md:mt-0">
+          <div class="w-14 md:w-24 rounded-full">
             <a href="https://github.com/devbytemehedi">
               <img
                 src="https://avatars.githubusercontent.com/u/89072438?s=96&v=4"
             /></a>
           </div>
         </div>
-        <a href="https://dub.sh/mhdev" class="font-bold text-xl mt-3"
+        <a
+          href="https://dub.sh/mhdev"
+          class="font-bold text-base md:text-xl mt-3"
           >Mehedi Hasan</a
         >
-        <p class="font-bold text-sky-600">
+        <p class="font-bold text-sky-600 text-sm md:text-base">
           Front-End <span class="text-[#FF00F2]">Developer</span>
         </p>
         <button
-          class="btn capitalize text-sm font-semibold min-h-0 h-8 rounded-xl my-2 bg-[#111313] border outline-none border-solid border-sky-600 text-sky-600 hover:bg-gray-900 hover:border-sky-600"
+          class="btn capitalize text-sm font-semibold min-h-0 h-6 md:h-8 rounded-xl mt-2 mb-5 bg-[#111313] border outline-none border-solid border-sky-600 text-sky-600 hover:bg-gray-900 hover:border-sky-600"
         >
-          <a href="https://dub.sh/mhdev">View More</a>
+          <a href="https://github.com/devbytemehedi">Github</a>
         </button>
       </div>
-      <div class="bg-gray-900 min-h-screen w-full flex p-10 flex-col gap-5">
+      <div
+        class="bg-gray-900 min-h-screen w-full flex p-10 flex-col gap-5 justify-center items-center"
+      >
         <a
           class="self-center btn capitalize text-sm font-semibold min-h-0 h-8 rounded-xl my-2 bg-gray-900 border outline-none border-solid border-sky-600 text-sky-600 hover:bg-[#111313] hover:border-sky-600 w-fit"
           href="./index.html"
@@ -64,11 +63,11 @@
             class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5"
           >
             <input type="radio" name="my-accordion-4" checked="checked" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-base md:text-xl font-medium">
               👉 Discuss the scope of <code>var</code>, <code> let </code> and
               <code> const </code>
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content text-sm md:text-base">
               <p>
                 💬 Scope of <code>var</code> :
                 <strong class="text-sky-600">var</strong> has
@@ -100,11 +99,11 @@
             class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5"
           >
             <input type="radio" name="my-accordion-4" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-base md:text-xl font-medium">
               👉 Tell us the use cases of <code>null</code> and
               <code>undefined</code>
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content text-sm md:text-base">
               <p>
                 💬 Case of <code>null</code> :
                 <strong class="text-sky-600">null</strong> is used to represent
@@ -130,10 +129,10 @@
             class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5"
           >
             <input type="radio" name="my-accordion-4" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-base md:text-xl font-medium">
               👉 What do you mean by REST API ?
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content text-sm md:text-base">
               <p>
                 💬 <span class="text-sky-600">REST </span
                 ><span class="text-[#FF00F2]">API</span> : Full meaning

@@ -1,26 +1,31 @@
-# PHero-tube
+[![swiftstart](./src/assets/logo/phtube-logo.png)](https://dub.sh/phtube)
 
-## [ Private Repo Link](https://classroom.github.com/a/HIPmbF3j)
+<h3 align="center">A Simple Responsive & Interactive Video Website </h3>
 
-Click here for the private repo: [https://classroom.github.com/a/HIPmbF3j](https://classroom.github.com/a/HIPmbF3j)
+## How to run this ?
 
+👉 Clone this repository in your **local machine**
 
+👉 Open the cloned project in **`vscode`**
 
-# API
+👉 Install packages in **`package.json`**
 
-All category :  - https://openapi.programming-hero.com/api/videos/categories
+```bash
+npm i
+```
 
+👉 Build the project
 
-### ALL data by categoryId
-URL Format: - https://openapi.programming-hero.com/api/videos/category/${id}
+```bash
+npm run build
+```
 
-Example: - https://openapi.programming-hero.com/api/videos/category/1000
+- Install **Live Server Extension**
+- Open `src/pages/index.html` and Right click on the editor
+- Click **Open with Live Server**.
+- Project should be up and running in your browser.
 
+## License
 
-## Blog Questions
-
-- Discuss the scope of `var`, `let`, and `const`
-- Tell us the use cases of `null` and `undefined`
-- What do you mean by REST API?
-
+The code is available under the [MIT](./LICENSE) license.
 

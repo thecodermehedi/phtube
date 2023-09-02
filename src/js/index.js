@@ -12,7 +12,7 @@ const pushCatButtons = (array) => {
   array.forEach((element) => {
     const catButton = document.createElement("button");
     catButton.setAttribute("id", `${element.category_id}`);
-    catButton.classList = `btn bg-[#25252526] border-none outline-none min-h-0 h-10 rounded-md capitalize hover:bg-red-500 hover:text-white`;
+    catButton.classList = `btn bg-[#25252526] border-none outline-none min-h-0 h-10 rounded-md capitalize hover:bg-red-500 hover:text-white text-sm md:text-base`;
     catButton.innerText = `${element.category}`;
     vidContainer.appendChild(catButton);
     catId = `${element.category_id}`;
@@ -38,10 +38,10 @@ const fetchClearShowData = async (id) => {
     videoContainer.textContent = "";
     const notFoundDiv = document.getElementById("not-found");
     notFoundDiv.classList =
-      "min-h-screen flex flex-col justify-center items-center text-center";
+      "h-screen flex flex-col justify-center items-center text-center";
     notFoundDiv.innerHTML = `
-    <img src="../assets/img/icon.png" alt="not-found-icon" />
-    <h2 class="font-bold text-3xl">
+    <img class="w-24 md:w-fit my-5" src="../assets/img/nodata-icon.png" alt="not-found-icon" />
+    <h2 class="font-bold text-lg  md:text-xl lg:text-3xl">
       Oops!!Sorry, There is no <br />
       content here
     </h2>
@@ -119,6 +119,7 @@ const sortBtn = document.getElementById("sort-btn");
 sortBtn.addEventListener("click", function () {
   sortByView(1000);
 });
+
 
 getCatData();
 fetchClearShowData(1000);

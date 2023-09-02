@@ -32,30 +32,39 @@
     <section id="body">
       <header>
         <nav class="flex items-center justify-between mx-10 md:mx-20 pt-7">
-          <div class="logo">
-            <a href="./index.html">
-              <img src="../assets/logo/phtube-logo.png" alt="PH Tube" />
-            </a>
-          </div>
+          <a href="./index.html">
+            <img
+              class="w-40 md:w-full"
+              src="../assets/logo/phtube-logo.png"
+              alt="PH Tube"
+            />
+          </a>
           <button
             id="sort-btn"
-            class="btn bg-[#25252533] min-h-0 h-10 rounded-md capitalize border-none outline-none focus:outline-none hover:bg-red-500 hover:text-white"
+            class="btn bg-[#25252533] min-h-0 h-10 rounded-md capitalize border-none outline-none focus:outline-none hover:bg-red-500 hover:text-white hidden md:block lg:w-96 mr-20 lg:mr-28"
           >
             Sort by view</button
-          ><a
-            class="btn hover:bg-red-600 bg-red-500 border-none text-white outline-none min-h-0 h-10 rounded-md capitalize ml-24"
-            href="blog.html"
-          >
-            Blog</a
-          >
+          ><a href="blog.html"
+            ><button
+              class="btn hover:bg-red-600 bg-red-500 border-none text-white outline-none min-h-0 h-8 md:h-10 rounded-md capitalize"
+            >
+              Blog
+            </button>
+          </a>
         </nav>
         <hr class="border border-gray-200 my-5 mx-10 md:mx-20" />
       </header>
-      <main class="mx-10 md:mx-20">
+      <main class="mx-10 md:mx-20 text-center">
         <div
           id="video-catagories"
-          class="flex justify-center items-center mx-10 gap-5"
+          class="flex justify-center items-center mx-5 md:mx-10 gap-2 md:gap-5 flex-wrap"
         ></div>
+        <button
+          onclick="sortByView(1000)"
+          class="btn bg-[#25252533] min-h-0 h-10 rounded-md capitalize border-none outline-none focus:outline-none hover:bg-red-500 hover:text-white block md:hidden my-5 w-full"
+        >
+          Sort by view
+        </button>
         <div id="not-found"></div>
         <div
           id="video-container"
