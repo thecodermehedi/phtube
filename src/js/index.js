@@ -109,6 +109,9 @@ const sortByView = async (id) => {
     const second = parseFloat(b.others.views);
     return second - first;
   });
+  const notFoundDiv = document.getElementById("not-found");
+  notFoundDiv.classList.remove("min-h-screen");
+  notFoundDiv.textContent = "";
   pushVideoCards(media);
 };
 
