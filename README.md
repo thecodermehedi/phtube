@@ -1,6 +1,10 @@
-[![swiftstart](./src/assets/logo/phtube-logo.png)](https://dub.sh/phtube)
+<div align="center">
 
-<h3 align="center">A Simple Responsive & Interactive Video Website </h3>
+<a  href="https://dub.sh/phtube"><img src="./src/assets/logo/phtube-logo.png"></a>
+
+<h3>A Simple Responsive & Interactive Video Website </h3>
+
+ </div>
 
 ## How to run this ?
 
@@ -28,4 +32,3 @@ npm run build
 ## License
 
 The code is available under the [MIT](./LICENSE) license.
-
