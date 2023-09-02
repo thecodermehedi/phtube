@@ -2,7 +2,7 @@
 
 ## Main Part
 
--> Navbar flex-between-mx-10
+<!-- -> Navbar flex-between-mx-10 -->
 
 <!-- -> [Logo](./src/assets/logo/Logo.png) -->
 <!-- -> Sort by view (button) -->
@@ -23,12 +23,12 @@
 
 ## Bonus Part
 
--> Navbar
--> Sort by view
+<!-- -> Navbar
+-> Sort by view -->
 -> if clicked videos in the current active catagory
--> Videos will be sort in decending order based on views
--> empty vidoes parent div and push with condition and show in ui
--> Video cards
+<!-- -> Videos will be sort in decending order based on views -->
+<!-- -> empty vidoes parent div and push with condition and show in ui -->
+<!-- -> Video cards -->
 <!-- -> video api has posted date (whitish) - with background color (darkish) -->
 <!-- -> if not found (hidden) -->
 <!-- ->else if found -->

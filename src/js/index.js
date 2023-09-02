@@ -80,7 +80,7 @@ const pushVideoCards = (array) => {
     videoCard.innerHTML = `
       <figure class="rounded-md relative">
         <img class="w-[312px] h-[200px]" src="${element.thumbnail}" />
-        <p class="time absolute bg-[#171717] text-gray-100 rounded-md px-2 bottom-2 right-2">
+        <p class="text-sm bg-opacity-60 absolute bg-black text-white rounded-md px-2 bottom-2 right-2">
           ${time}
         </p>
       </figure>
@@ -104,18 +104,18 @@ const sortByView = async (id) => {
   );
   const data = await res.json();
   const media = data.data;
-  media.forEach((element) => {
-    const vidViewsCount = parseFloat(element.others.views);
-    console.log(element.others.views);
-    console.log(vidViewsCount);
+  media.sort((a, b) => {
+    const first = parseFloat(a.others.views);
+    const second = parseFloat(b.others.views);
+    return second - first;
   });
+  pushVideoCards(media);
 };
 
 const sortBtn = document.getElementById("sort-btn");
 sortBtn.addEventListener("click", function () {
-  // sortByView(1000);
+  sortByView(1000);
 });
 
 getCatData();
 fetchClearShowData(1000);
-sortByView(1000);
