@@ -38,11 +38,11 @@ const fetchClearShowData = async (id) => {
     videoContainer.textContent = "";
     const notFoundDiv = document.getElementById("not-found");
     notFoundDiv.classList =
-      "h-screen flex flex-col justify-center items-center text-center";
+      "my-10 flex flex-col justify-center items-center text-center";
     notFoundDiv.innerHTML = `
-    <img class="w-24 md:w-fit my-5" src="../assets/img/nodata-icon.png" alt="not-found-icon" />
-    <h2 class="font-bold text-lg  md:text-xl lg:text-3xl">
-      Oops!!Sorry, There is no <br />
+    <img class="w-14 md:w-24 my-5" src="../assets/img/nodata-icon.png" alt="not-found-icon" />
+    <h2 class="font-bold text-sm  md:text-xl lg:text-3xl">
+      Oops!! <br> Sorry, There is no <br />
       content here
     </h2>
     `;
@@ -119,7 +119,6 @@ const sortBtn = document.getElementById("sort-btn");
 sortBtn.addEventListener("click", function () {
   sortByView(1000);
 });
-
 
 getCatData();
 fetchClearShowData(1000);
