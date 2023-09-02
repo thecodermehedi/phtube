@@ -1,136 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Mehedi Hasan</title>
+    <meta name="title" content="PH Tube" />
+    <meta
+      name="description"
+      content="A Simple Responsive & Interactive Video Website"
+    />
+    <!-- Favicon  -->
+    <link rel="icon" sizes="192x192" href="../assets/favicons/favicon.png" />
+    <link rel="apple-touch-icon" href="../assets/favicons/favicon.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" href="../styles/output.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog - Mehedi Hasan</title>
-  <meta name="title" content="PH Tube" />
-  <meta name="description" content="A Simple Responsive & Interactive Video Website" />
-  <!-- Favicon  -->
-  <link rel="icon" sizes="192x192" href="../assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon" href="../assets/favicons/favicon.png" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- Link to an external CSS file -->
-  <link rel="stylesheet" href="../styles/output.css" />
-</head>
-
-<body class="min-h-screen text-gray-100 font-ubuntu">
-  <div class="flex flex-col md:flex-row">
-    <div class="bg-[#111313] flex-col justify-center items-center md:h-screen w-full md:w-80 flex">
-      <div class="avatar mt-10 md:mt-0">
-        <div class="w-14 md:w-24 rounded-full">
-          <a href="https://github.com/devbytemehedi">
-            <img src="https://avatars.githubusercontent.com/u/89072438?s=96&v=4" /></a>
+  <body class="min-h-screen text-gray-100 font-ubuntu">
+    <div class="flex flex-col md:flex-row">
+      <div
+        class="bg-[#111313] flex-col justify-center items-center md:h-screen w-full md:w-80 flex"
+      >
+        <div class="avatar mt-10 md:mt-0">
+          <div class="w-14 md:w-24 rounded-full">
+            <a href="https://github.com/devbytemehedi">
+              <img
+                src="https://avatars.githubusercontent.com/u/89072438?s=96&v=4"
+            /></a>
+          </div>
+        </div>
+        <a
+          href="https://dub.sh/mhdev"
+          class="font-bold text-base md:text-xl mt-3"
+          >Mehedi Hasan</a
+        >
+        <p class="font-bold text-sky-600 text-sm md:text-base">
+          Front-End <span class="text-[#FF00F2]">Developer</span>
+        </p>
+        <button
+          class="btn capitalize text-sm font-semibold min-h-0 h-6 md:h-8 rounded-xl mt-2 mb-5 bg-[#111313] border outline-none border-solid border-sky-600 text-sky-600 hover:bg-gray-900 hover:border-sky-600"
+        >
+          <a href="https://github.com/devbytemehedi">Github</a>
+        </button>
+      </div>
+      <div
+        class="bg-gray-900 min-h-screen w-full flex p-10 flex-col gap-5 justify-center items-center"
+      >
+        <a
+          class="self-center btn capitalize text-sm font-semibold min-h-0 h-8 rounded-xl md:my-2 bg-gray-900 border outline-none border-solid border-sky-600 text-sky-600 hover:bg-[#111313] hover:border-sky-600 w-fit"
+          href="./index.html"
+        >
+          Back to Home</a
+        >
+        <div class="join join-vertical w-full">
+          <div
+            class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5"
+          >
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-base md:text-xl font-medium">
+              👉 Discuss the scope of <code>var</code>, <code> let </code> and
+              <code> const </code>
+            </div>
+            <div class="collapse-content text-sm md:text-base">
+              <p>
+                💬 Scope of <code>var</code> :
+                <strong class="text-sky-600">var</strong> has
+                <strong>global</strong> and <strong>function</strong> scope,
+                meaning if <u>var</u> is declared inside a function then it is
+                accessible throughout the entire function and if it is declared
+                outside of a function then it has a <u>global scope</u>, meaning
+                that it is accessible throughout the intire javascript file.
+              </p>
+              <p class="py-5">
+                💬 Scope of <code>let</code> :
+                <strong class="text-sky-600">let</strong> has
+                <strong>block-level</strong> scope, meaning <u>let</u> are only
+                accessible inside the block they are declared, variables that
+                are declared with <u>let</u> can be
+                <strong>reassign</strong> but cannot be
+                <strong>redeclared</strong>.
+              </p>
+              <p>
+                💬 Scope of <code>const</code> :
+                <strong class="text-sky-600">const</strong> also has
+                <strong>block-level</strong> scope similar to
+                <strong class="text-sky-600">let</strong>, but variables
+                declared with <u>const</u> cannot be <strong>reassign</strong>.
+              </p>
+            </div>
+          </div>
+          <div
+            class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5"
+          >
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-base md:text-xl font-medium">
+              👉 Tell us the use cases of <code>null</code> and
+              <code>undefined</code>
+            </div>
+            <div class="collapse-content text-sm md:text-base">
+              <p>
+                💬 Case of <code>null</code> :
+                <strong class="text-sky-600">null</strong> is used to represent
+                the intentional absence of a value, meaning a variable or object
+                does not have a value.
+              </p>
+              <p class="pt-5 pb-2">
+                💬 Case of <code>undefined</code> : On the other hand,
+                <strong class="text-sky-600">undefined</strong> is the deafault
+                value assigned to variables that does not have declared value,
+                meaning a variable is declared but the value is not.
+              </p>
+              <p>
+                ➡️Example:
+                <code class="text-[#ABB2BF]"
+                  ><span class="text-[#FF00F2]">let</span> variable;</code
+                >
+                <code class="italic text-[#6D6F7C]">//Output: undefined</code>
+              </p>
+            </div>
+          </div>
+          <div
+            class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5"
+          >
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-base md:text-xl font-medium">
+              👉 What do you mean by REST API ?
+            </div>
+            <div class="collapse-content text-sm md:text-base">
+              <p>
+                💬 <span class="text-sky-600">REST </span
+                ><span class="text-[#FF00F2]">API</span> : Full meaning
+                <strong class="mr-2"> Representational State Transfer</strong>
+                <strong>Application Programming Interface</strong>.
+              </p>
+              <p class="py-3">
+                <span class="text-xl font-black">I</span>magine you have a
+                <u>website</u> and you want make it more <u>dynamic</u>, so for
+                this you need to interact with a <u>server</u> to get some
+                information. <br />
+                A REST <u>API</u> is like set of rules that both your website
+                and server follow to <u>communicate</u> with each other. Think
+                of server as <u>big library</u> with different
+                <u>resources</u> that you can access. Each resource has a
+                <u>unique address</u> (URL). To get this resource you can send
+                different <u>request</u> to the server using your
+                <u>website</u>.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <a href="https://dub.sh/mhdev" class="font-bold text-base md:text-xl mt-3">Mehedi Hasan</a>
-      <p class="font-bold text-sky-600 text-sm md:text-base">
-        Front-End <span class="text-[#FF00F2]">Developer</span>
-      </p>
-      <button
-        class="btn capitalize text-sm font-semibold min-h-0 h-6 md:h-8 rounded-xl mt-2 mb-5 bg-[#111313] border outline-none border-solid border-sky-600 text-sky-600 hover:bg-gray-900 hover:border-sky-600">
-        <a href="https://github.com/devbytemehedi">Github</a>
-      </button>
     </div>
-    <div class="bg-gray-900 min-h-screen w-full flex p-10 flex-col gap-5 justify-center items-center">
-      <a class="self-center btn capitalize text-sm font-semibold min-h-0 h-8 rounded-xl md:my-2 bg-gray-900 border outline-none border-solid border-sky-600 text-sky-600 hover:bg-[#111313] hover:border-sky-600 w-fit"
-        href="./index.html">
-        Back to Home</a>
-      <div class="join join-vertical w-full">
-        <div class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5">
-          <input type="radio" name="my-accordion-4" checked="checked" />
-          <div class="collapse-title text-base md:text-xl font-medium">
-            👉 Discuss the scope of <code>var</code>, <code> let </code> and
-            <code> const </code>
-          </div>
-          <div class="collapse-content text-sm md:text-base">
-            <p>
-              💬 Scope of <code>var</code> :
-              <strong class="text-sky-600">var</strong> has
-              <strong>global</strong> and <strong>function</strong> scope,
-              meaning if <u>var</u> is declared inside a function then it is
-              accessible throughout the entire function and if it is declared
-              outside of a function then it has a <u>global scope</u>, meaning
-              that it is accessible throughout the intire javascript file.
-            </p>
-            <p class="py-5">
-              💬 Scope of <code>let</code> :
-              <strong class="text-sky-600">let</strong> has
-              <strong>block-level</strong> scope, meaning <u>let</u> are only
-              accessible inside the block they are declared, variables that
-              are declared with <u>let</u> can be
-              <strong>reassign</strong> but cannot be
-              <strong>redeclared</strong>.
-            </p>
-            <p>
-              💬 Scope of <code>const</code> :
-              <strong class="text-sky-600">const</strong> also has
-              <strong>block-level</strong> scope similar to
-              <strong class="text-sky-600">let</strong>, but variables
-              declared with <u>const</u> cannot be <strong>reassign</strong>.
-            </p>
-          </div>
-        </div>
-        <div class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-base md:text-xl font-medium">
-            👉 Tell us the use cases of <code>null</code> and
-            <code>undefined</code>
-          </div>
-          <div class="collapse-content text-sm md:text-base">
-            <p>
-              💬 Case of <code>null</code> :
-              <strong class="text-sky-600">null</strong> is used to represent
-              the intentional absence of a value, meaning a variable or object
-              does not have a value.
-            </p>
-            <p class="pt-5 pb-2">
-              💬 Case of <code>undefined</code> : On the other hand,
-              <strong class="text-sky-600">undefined</strong> is the deafault
-              value assigned to variables that does not have declared value,
-              meaning a variable is declared but the value is not.
-            </p>
-            <p>
-              ➡️Example:
-              <code class="text-[#ABB2BF]"><span class="text-[#FF00F2]">let</span> variable;</code>
-              <code class="italic text-[#6D6F7C]">//Output: undefined</code>
-            </p>
-          </div>
-        </div>
-        <div class="collapse collapse-arrow join-item border border-gray-400 rounded-xl p-5">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-base md:text-xl font-medium">
-            👉 What do you mean by REST API ?
-          </div>
-          <div class="collapse-content text-sm md:text-base">
-            <p>
-              💬 <span class="text-sky-600">REST </span><span class="text-[#FF00F2]">API</span> : Full meaning
-              <strong class="mr-2"> Representational State Transfer</strong>
-              <strong>Application Programming Interface</strong>.
-            </p>
-            <p class="py-3">
-              <span class="text-xl font-black">I</span>magine you have a
-              <u>website</u> and you want make it more <u>dynamic</u>, so for
-              this you need to interact with a <u>server</u> to get some
-              information. <br />
-              A REST <u>API</u> is like set of rules that both your website
-              and server follow to <u>communicate</u> with each other. Think
-              of server as <u>big library</u> with different
-              <u>resources</u> that you can access. Each resource has a
-              <u>unique address</u> (URL). To get this resource you can send
-              different <u>request</u> to the server using your
-              <u>website</u>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="../js/index.js"></script>
-</body>
-
+    <script src="../js/index.js"></script>
+  </body>
 </html>
