@@ -88,9 +88,9 @@ const pushVideoCards = (array) => {
         <img class="rounded-full w-10 h-10" src="${element.authors[0].profile_picture}" alt="" />
         <div class="text-left">
           <p class="font-bold">${element.title}</p>
-          <p class="text-[#171717b3] font-normal text-sm my-2 flex items-center gap-2">
+          <p class="text-[#171717b3] dark:text-gray-400 font-normal text-sm my-2 flex items-center gap-2">
             ${element.authors[0].profile_name} ${verifiedElement}</p>
-          <p class="text-[#171717b3] font-normal text-sm">${element.others.views} views</p>
+          <p class="text-[#171717b3] dark:text-gray-500 font-normal text-sm">${element.others.views} views</p>
         </div>
       </div>
     `;
