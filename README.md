@@ -4,6 +4,8 @@
 
 <h3>A Simple Responsive & Interactive Video Website </h3>
 
+[![wakatime](https://wakatime.com/badge/user/805ef0e4-46bb-49a3-bffc-fd6ca82758b5/project/99051fc9-8d25-47db-99c9-579af2cf0d41.svg)](https://wakatime.com/badge/user/805ef0e4-46bb-49a3-bffc-fd6ca82758b5/project/99051fc9-8d25-47db-99c9-579af2cf0d41)
+
  </div>
 
 ## How to run this ?
